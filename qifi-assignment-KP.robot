@@ -28,8 +28,6 @@ List step for qifi testing
 กดปุ่ม Generate!
     Click Element    id=generate
 ตรวจสอบ Output: QR Code
-    Wait Until Element Is Enabled    id=save
-    Wait Until Element Is Enabled    id=export
-    Wait Until Element Is Enabled    id=print
+    Wait Until Element Is Enabled    //*[@id="qrcode"]/canvas
 ปิด Browser
     Close Browser
