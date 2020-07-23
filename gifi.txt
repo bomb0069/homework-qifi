@@ -1,0 +1,7 @@
+Open Chrome Browser
+go to link : https://qifi.org/
+Input text : ในช่อง SSID
+Input text : ในช่อง Key
+กดปุ่ม Generate!
+Show QR Code
+Close Browser
