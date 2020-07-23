@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200723 16:29:00.444" rpa="false">
+<suite id="s1" name="Wifi" source="C:\Users\phongpaktao\Documents\homework-qifi\wifi.robot">
+<test id="s1-t1" name="Generate QR Wifi โดย https://qifi.org/ ผ่าน Chrome">
+<kw name="เปิด Chrome เข้า https://qifi.org/">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200723 16:29:01.081" level="INFO">Opening browser 'Chrome' to base url 'https://qifi.org/'.</msg>
+<status status="PASS" starttime="20200723 16:29:01.080" endtime="20200723 16:29:06.881"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:01.080" endtime="20200723 16:29:06.882"></status>
+</kw>
+<kw name="ใส่ SSID">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>ssid</arg>
+<arg>แมว</arg>
+</arguments>
+<msg timestamp="20200723 16:29:06.884" level="INFO">Typing text 'แมว' into text field 'ssid'.</msg>
+<status status="PASS" starttime="20200723 16:29:06.883" endtime="20200723 16:29:07.637"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:06.883" endtime="20200723 16:29:07.637"></status>
+</kw>
+<kw name="ใส่ Key">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>key</arg>
+<arg>cat</arg>
+</arguments>
+<msg timestamp="20200723 16:29:07.639" level="INFO">Typing text 'cat' into text field 'key'.</msg>
+<status status="PASS" starttime="20200723 16:29:07.639" endtime="20200723 16:29:08.143"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:07.638" endtime="20200723 16:29:08.143"></status>
+</kw>
+<kw name="กดปุ่มGenerate">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>generate</arg>
+</arguments>
+<msg timestamp="20200723 16:29:08.145" level="INFO">Clicking button 'generate'.</msg>
+<status status="PASS" starttime="20200723 16:29:08.145" endtime="20200723 16:29:09.003"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:08.144" endtime="20200723 16:29:09.003"></status>
+</kw>
+<kw name="เช็ค QR">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>id:qrcode</arg>
+</arguments>
+<status status="PASS" starttime="20200723 16:29:09.004" endtime="20200723 16:29:09.091"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:09.003" endtime="20200723 16:29:09.092"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:29:01.077" endtime="20200723 16:29:09.093" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 16:29:00.452" endtime="20200723 16:29:09.102"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Wifi">Wifi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
