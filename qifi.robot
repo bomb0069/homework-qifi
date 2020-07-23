@@ -25,7 +25,7 @@ Library    SeleniumLibrary
     Click Button    Generate!
 
 รอให้ qr code ขึ้นมา
-    Wait Until Page Contains    qrcode
+    Wait Until Element Is Enabled    id:qrcode
 
 ปิดหน้าต่าง
     Close Browser
