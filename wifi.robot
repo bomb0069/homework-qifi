@@ -9,6 +9,7 @@ Generate QR Wifi โดย https://qifi.org/ ผ่าน Chrome
     ใส่ Key
     กดปุ่มGenerate  
     เช็ค QR
+    Close Browser
 
 *** Keywords ***
 เปิด Chrome เข้า https://qifi.org/
