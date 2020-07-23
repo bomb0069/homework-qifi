@@ -8,7 +8,7 @@ Generate Qifi wifi
     ใส่ Key
     กด Generate
     เช็ค QR code
-    ปิด browser
+    
 
 *** Keywords ***
 
@@ -27,6 +27,5 @@ Generate Qifi wifi
 เช็ค QR code
     Element Should Be Enabled    id:qrcode
 
-ปิด browser
-    Close Browser
+
 
