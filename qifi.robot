@@ -2,30 +2,31 @@
 Library    SeleniumLibrary 
 
 *** Test Cases ***
-ค้นหา anchisa ใน Google ผ่าน Chrome
-    เปิดโครมขึ้นมา
-    ค้นหาคำว่า บิงซูมะม่วง
-    คลิกปุ่มค้นหา
-    จะต้องพบคำว่า บิงซูมะม่วง ในผลลัพธ์
-    คลิก link แรกที่เจอ
-    ปิด Browser
+Generate Qifi wifi
+    เปิดเข้าหน้าเว็บ browser
+    ใส่ SSID
+    ใส่ Key
+    กด Generate
+    เช็ค QR code
+    ปิด browser
 
 *** Keywords ***
-เปิดโครมขึ้นมา
-    Open Browser    http://google.co.th    chrome
 
-ค้นหาคำว่า บิงซูมะม่วง
-    Input Text    q    บิงซูมะม่วง
+เปิดเข้าหน้าเว็บ browser
+    Open Browser    https://qifi.org/    Chrome
 
-คลิกปุ่มค้นหา
-    Press Keys    q    RETURN
+ใส่ SSID
+    Input Text    ssid    anchisa
 
-จะต้องพบคำว่า บิงซูมะม่วง ในผลลัพธ์
-    Page Should Contain    บิงซูมะม่วง
+ใส่ Key
+    Input Text    key    fah
 
-คลิก link แรกที่เจอ
-    Click Element    //*[@id="rso"]/div[3]/div/div[1]/a/h3
+กด Generate
+    Press keys    generate    ENTER
 
-ปิด Browser
+เช็ค QR code
+    Element Should Be Enabled    id:qrcode
+
+ปิด browser
     Close Browser
 
