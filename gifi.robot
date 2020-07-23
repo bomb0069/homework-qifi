@@ -4,21 +4,24 @@ Library    SeleniumLibrary
 *** Test Cases ***
 #tag Test Cases
 เปิด Google Chrome
-    Open Chrome Browser
-    Input text : ในช่องค้นหา
-    กดค้นหา
-    คลิกที่ลิงค์แรกเสมอ เมื่อมีคำค้นหาที่ตรงกัน เปิดหน้าเว็บ
-    ถ้าไม่มีคำที่ตรงกันเลย ให้หยุดการทำงานค้างไว้ที่หน้าจอค้นหา หรือ ปิดเบราว์เซอร์ลงไป
-*** Keywords ***
-Open Chrome Browser
-    Open Browser    http://Google.co.th    chrome
-Input text : ในช่องค้นหา
-    Input Text    q    neeyalioness    #Input Text <locator><value>
-กดค้นหา
-    Press Keys    q    RETURN
+    Open Chrome Browser + go to link
+    Input text : ในช่อง SSID
+    Input text : ในช่อง Key
+    กดปุ่ม Generate!
+    #Show QR Code
+    #Close Browser
 
-คลิกที่ลิงค์แรกเสมอ เมื่อมีคำค้นหาที่ตรงกัน เปิดหน้าเว็บ
-    #Click Element    class:g
-    Click Link    //*[@id="rso"]/div[1]/div/div[1]/a
-ถ้าไม่มีคำที่ตรงกันเลย ให้หยุดการทำงานค้างไว้ที่หน้าจอค้นหา หรือ ปิดเบราว์เซอร์ลงไป
+
+*** Keywords ***
+Open Chrome Browser + go to link
+    Open Browser    https://qifi.org/    chrome
+Input text : ในช่อง SSID
+    Input Text    ssid    neeyalioness
+Input text : ในช่อง Key
+    Input Text    key    23072020day13
+
+กดปุ่ม Generate!
+    Click Button    generate
+
+Close Browser
     Close Browser
