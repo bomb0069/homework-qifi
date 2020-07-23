@@ -1,0 +1,6 @@
+เปิด browser
+ใส่ ssid
+ใส่ key
+กด generate
+ดู element qr code
+ปิด
