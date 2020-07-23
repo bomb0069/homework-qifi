@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 16:38:37.789" rpa="false">
+<suite id="s1" name="Qrcode" source="C:\Users\chatchanokwon\Desktop\homework\qrcode.robot">
+<test id="s1-t1" name="Generate QR code">
+<kw name="เปิด https://qifi.org/ ด้วย chrome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200723 16:38:38.072" level="INFO">Opening browser 'Chrome' to base url 'https://qifi.org'.</msg>
+<status status="PASS" starttime="20200723 16:38:38.072" endtime="20200723 16:38:42.182"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:38:38.072" endtime="20200723 16:38:42.182"></status>
+</kw>
+<kw name="กรอก SSID">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>ssid</arg>
+<arg>Generate</arg>
+</arguments>
+<msg timestamp="20200723 16:38:42.183" level="INFO">Typing text 'Generate' into text field 'ssid'.</msg>
+<status status="PASS" starttime="20200723 16:38:42.183" endtime="20200723 16:38:42.513"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:38:42.182" endtime="20200723 16:38:42.514"></status>
+</kw>
+<kw name="กรอก Key">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>key</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20200723 16:38:42.514" level="INFO">Typing text '1234' into text field 'key'.</msg>
+<status status="PASS" starttime="20200723 16:38:42.514" endtime="20200723 16:38:42.725"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:38:42.514" endtime="20200723 16:38:42.725"></status>
+</kw>
+<kw name="กดปุ่ม Generate!">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>generate</arg>
+</arguments>
+<msg timestamp="20200723 16:38:42.726" level="INFO">Clicking button 'generate'.</msg>
+<status status="PASS" starttime="20200723 16:38:42.726" endtime="20200723 16:38:43.147"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:38:42.725" endtime="20200723 16:38:43.148"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:38:38.071" endtime="20200723 16:38:43.148" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 16:38:37.793" endtime="20200723 16:38:43.152"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Qrcode">Qrcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
