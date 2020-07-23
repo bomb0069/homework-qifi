@@ -20,6 +20,6 @@ Library    SeleniumLibrary
 กดปุ่ม Enter
     Press Keys         key                                 RETURN
 รอ qr code ปรากฏ
-    Wait Until Page Contains Element    id:qrcode    limit=1
+    Wait Until Element Is Enable    id:qrcode    limit=1
 ปิด
     Close Browser
