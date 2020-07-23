@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 16:49:16.016" rpa="false">
+<suite id="s1" name="Gifi" source="C:\Users\hasaneeyakae\ROBOT WK\homework-qifi\gifi.robot">
+<test id="s1-t1" name="เปิด Google Chrome">
+<kw name="Open Chrome Browser + go to link">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 16:49:16.313" level="INFO">Opening browser 'chrome' to base url 'https://qifi.org/'.</msg>
+<status status="PASS" starttime="20200723 16:49:16.313" endtime="20200723 16:49:20.674"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:49:16.312" endtime="20200723 16:49:20.675"></status>
+</kw>
+<kw name="Input text : ในช่อง SSID">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>ssid</arg>
+<arg>neeyalioness</arg>
+</arguments>
+<msg timestamp="20200723 16:49:20.678" level="INFO">Typing text 'neeyalioness' into text field 'ssid'.</msg>
+<status status="PASS" starttime="20200723 16:49:20.676" endtime="20200723 16:49:21.048"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:49:20.675" endtime="20200723 16:49:21.048"></status>
+</kw>
+<kw name="Input text : ในช่อง Key">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>key</arg>
+<arg>23072020day13</arg>
+</arguments>
+<msg timestamp="20200723 16:49:21.049" level="INFO">Typing text '23072020day13' into text field 'key'.</msg>
+<status status="PASS" starttime="20200723 16:49:21.049" endtime="20200723 16:49:21.290"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:49:21.048" endtime="20200723 16:49:21.290"></status>
+</kw>
+<kw name="กดปุ่ม Generate!">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>generate</arg>
+</arguments>
+<msg timestamp="20200723 16:49:21.292" level="INFO">Clicking button 'generate'.</msg>
+<status status="PASS" starttime="20200723 16:49:21.291" endtime="20200723 16:49:21.651"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:49:21.291" endtime="20200723 16:49:21.652"></status>
+</kw>
+<kw name="Show QR Code">
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>id:qrcode</arg>
+<arg>timeout:5</arg>
+</arguments>
+<msg timestamp="20200723 16:49:21.653" level="FAIL">Keyword 'SeleniumLibrary.Element Should Be Enabled' expected 1 argument, got 2.</msg>
+<status status="FAIL" starttime="20200723 16:49:21.653" endtime="20200723 16:49:21.653"></status>
+</kw>
+<status status="FAIL" starttime="20200723 16:49:21.653" endtime="20200723 16:49:21.653"></status>
+</kw>
+<status status="FAIL" starttime="20200723 16:49:16.311" endtime="20200723 16:49:21.654" critical="yes">Keyword 'SeleniumLibrary.Element Should Be Enabled' expected 1 argument, got 2.</status>
+</test>
+<status status="FAIL" starttime="20200723 16:49:16.019" endtime="20200723 16:49:21.658"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Gifi">Gifi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
