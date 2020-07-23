@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 16:34:12.288" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\phatthananrit\Documents\homework-qifi\google.robot">
+<test id="s1-t1" name="ค้นหา ขนม ใน google ผ่าน Chrome">
+<kw name="เปิดลิ้ง">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 16:34:12.869" level="INFO">Opening browser 'chrome' to base url 'https://qifi.org'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200723 16:34:12.884" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200723 16:34:12.883" endtime="20200723 16:34:12.884"></status>
+</kw>
+<msg timestamp="20200723 16:34:12.897" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20200723 16:34:12.869" endtime="20200723 16:34:12.897"></status>
+</kw>
+<status status="FAIL" starttime="20200723 16:34:12.868" endtime="20200723 16:34:12.898"></status>
+</kw>
+<status status="FAIL" starttime="20200723 16:34:12.866" endtime="20200723 16:34:12.902" critical="yes">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<status status="FAIL" starttime="20200723 16:34:12.293" endtime="20200723 16:34:12.904"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
