@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 20:26:09.702" rpa="false">
+<suite id="s1" name="Qifi" source="C:\Users\tidanatkum\Desktop\qifi\homework-qifi\robot\qifi.robot">
+<test id="s1-t1" name="ค้นหา">
+<kw name="Go to QiFi">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org/#</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200723 20:26:09.974" level="INFO">Opening browser 'Chrome' to base url 'https://qifi.org/#'.</msg>
+<status status="PASS" starttime="20200723 20:26:09.973" endtime="20200723 20:26:15.493"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:09.973" endtime="20200723 20:26:15.493"></status>
+</kw>
+<kw name="Input keyword in SSID">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>ssid</arg>
+<arg>abcd</arg>
+</arguments>
+<msg timestamp="20200723 20:26:15.495" level="INFO">Typing text 'abcd' into text field 'ssid'.</msg>
+<status status="PASS" starttime="20200723 20:26:15.494" endtime="20200723 20:26:15.723"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:15.494" endtime="20200723 20:26:15.724"></status>
+</kw>
+<kw name="Input keyword in Key">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>key</arg>
+<arg>def</arg>
+</arguments>
+<msg timestamp="20200723 20:26:15.725" level="INFO">Typing text 'def' into text field 'key'.</msg>
+<status status="PASS" starttime="20200723 20:26:15.725" endtime="20200723 20:26:15.922"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:15.724" endtime="20200723 20:26:15.922"></status>
+</kw>
+<kw name="enter or click generate">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>key</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200723 20:26:15.923" level="INFO">Sending key(s) ('ENTER',) to key element.</msg>
+<msg timestamp="20200723 20:26:16.252" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200723 20:26:16.252" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200723 20:26:15.923" endtime="20200723 20:26:16.421"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:15.923" endtime="20200723 20:26:16.421"></status>
+</kw>
+<kw name="Page contains QR">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:qrcode</arg>
+</arguments>
+<msg timestamp="20200723 20:26:16.448" level="INFO">Current page contains element 'id:qrcode'.</msg>
+<status status="PASS" starttime="20200723 20:26:16.422" endtime="20200723 20:26:16.448"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:16.422" endtime="20200723 20:26:16.448"></status>
+</kw>
+<kw name="Close">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 20:26:16.449" endtime="20200723 20:26:18.693"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:16.449" endtime="20200723 20:26:18.693"></status>
+</kw>
+<status status="PASS" starttime="20200723 20:26:09.972" endtime="20200723 20:26:18.696" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 20:26:09.702" endtime="20200723 20:26:18.701"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Qifi">Qifi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
