@@ -1,0 +1,6 @@
+การสร้าง QR Code
+    เปิด Google Chrome เข้าลิงก์ https://qifi.org/
+    ใส่เลข SSID
+    ใส่ Key
+    กด Generate และแสดง QR Code
+    ปิด Browser
