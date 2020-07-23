@@ -8,8 +8,8 @@ Library    SeleniumLibrary
     Input text : ในช่อง SSID
     Input text : ในช่อง Key
     กดปุ่ม Generate!
-    #Show QR Code
-    #Close Browser
+    Show QR Code
+    Close Chrome Browser
 
 
 *** Keywords ***
@@ -22,6 +22,7 @@ Input text : ในช่อง Key
 
 กดปุ่ม Generate!
     Click Button    generate
-
-Close Browser
+Show QR Code
+    Element Should Be Enabled    id:qrcode
+Close Chrome Browser
     Close Browser
