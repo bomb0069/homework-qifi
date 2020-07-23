@@ -18,6 +18,9 @@ Library    SeleniumLibrary
 เช็ค QR Code
     Page Should Contain Element    qrcode
 
+ปิด Browser
+    Close Browser
+
 *** Test Cases ***
 
 Step 1
@@ -34,3 +37,6 @@ Step 4
 
 Step 5
     Page Should Contain Element    id=qrcode
+
+Step 6
+    Close Browser
