@@ -25,7 +25,7 @@ Generate Qifi wifi
     Press keys    generate    ENTER
 
 เช็ค QR code
-    Element Should Be Enabled    id:qrcode
+    Page Should Contain Element    id:qrcode
 
 ปิด browser
     Close Browser
