@@ -11,4 +11,4 @@ ${KEY}    MUSITMANI
 
 *** Test Cases ***
 สร้าง QR Code ของ ${SSID} ใน QiFi    ${SSID}    ${KEY}
-    
+สร้าง QR Code ของ POTAE ใน QiFi    POTAE    SM
